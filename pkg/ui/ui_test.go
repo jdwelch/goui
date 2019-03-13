@@ -17,7 +17,3 @@ func Test_ShowMessage(t *testing.T) {
 func Test_AskForConfirmation(t *testing.T) {
 	AskForConfirmation("Are you sure?")
 }
-
-func Test_Delay(t *testing.T) {
-	Delay(1000)
-}

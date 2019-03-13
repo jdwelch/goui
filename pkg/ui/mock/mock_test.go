@@ -9,3 +9,7 @@ import (
 func Test_ProgressBar(t *testing.T) {
 	ProgressBar("message", 10, true)
 }
+
+func Test_Delay(t *testing.T) {
+	Delay(1000)
+}
