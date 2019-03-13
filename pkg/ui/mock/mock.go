@@ -95,3 +95,8 @@ func DiffConflict(message string) {
 func ExecOut(target string, task string, message string) {
 	fmt.Println(ansi.Green + "[" + target + "](" + task + "): " + ansi.Reset + message)
 }
+
+// Delay artifically slows down execution
+func Delay(durationMs int) {
+	time.Sleep(time.Duration(durationMs) * time.Millisecond)
+}

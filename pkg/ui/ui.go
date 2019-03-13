@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"strings"
-	"time"
 
 	"github.com/mgutz/ansi"
 )
@@ -59,11 +58,6 @@ func AskForConfirmation(s string) bool {
 			return false
 		}
 	}
-}
-
-// Delay artifically slows down execution
-func Delay(durationMs int) {
-	time.Sleep(time.Duration(durationMs) * time.Millisecond)
 }
 
 // HelpTemplate is helpful
